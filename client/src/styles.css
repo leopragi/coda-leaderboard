@@ -1,0 +1,68 @@
+.ant-badge:not(.ant-badge-not-a-wrapper) {
+    margin-right: 20px;
+}
+.ant-badge.ant-badge-rtl:not(.ant-badge-not-a-wrapper) {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.head-example {
+    width: 42px;
+    height: 42px;
+    border-radius: 2px;
+    background: #eee;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.shine-card:after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: -250%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+}
+  
+/* Hover state - trigger effect */
+.shine-card:hover:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.5s, 0.5s, 0.15s;
+    transition-timing-function: ease;
+}
+  
+/* Active state */
+.shine-card:active:after {
+    opacity: 0;
+}
+
+.action-win:hover {
+    background-color: #52c41a;
+}
+
+.action-loss:hover {
+    background-color: #ff4d4f;
+}
+
+.action-tie:hover {
+    background-color: #CCCCCC;
+}
+
+.site-badge-count-white .ant-badge-count {
+    background-color: #fff;
+    color: #999;
+    box-shadow: 0 0 0 1px #d9d9d9 inset;
+  }

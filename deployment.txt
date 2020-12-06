@@ -1,0 +1,14 @@
+Deployment: https://coda-backend.herokuapp.com/
+Demo: https://youtu.be/7Xwa2EbGflA
+
+Execution:
+git clone https://github.com/leopragi/coda-leaderboard.git
+cd coda-leaderboard
+npm install
+cd client
+npm install
+cd ..
+npm run start:dev
+
+
+Quick run: MONGODB_URI="mongodb+srv://leopragi:1a3_L3g3nD++@cluster0.szyc5.mongodb.net/coda?retryWrites=true&w=majority" npm run start:dev
